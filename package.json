@@ -1,0 +1,51 @@
+{
+  "name": "shat",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "jest": "^23.5.0",
+    "jest-react-native": "^18.0.0",
+    "react-test-renderer": "16.3.1"
+  },
+  "scripts": {
+    "start": "fuser -k 8081/tcp ; react-native start",
+    "android": "react-native run-android ; fuser -k 8081/tcp ; react-native start",
+    "release": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res ; react-native run-android --variant=release",
+    "ios": "react-native run-ios",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "dependencies": {
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "dateformat": "^3.0.3",
+    "fuse.js": "^3.2.1",
+    "hoist-non-react-statics": "^3.0.1",
+    "i18next": "^11.6.0",
+    "invariant": "^2.2.4",
+    "prop-types": "^15.6.2",
+    "react": "16.3.1",
+    "react-i18next": "^7.10.1",
+    "react-native": "~0.55.2",
+    "react-native-admob": "^2.0.0-beta.5",
+    "react-native-cached-image": "^1.4.3",
+    "react-native-fetch-blob": "^0.10.8",
+    "react-native-firebase": "^4.3.8",
+    "react-native-google-analytics-bridge": "^5.8.0",
+    "react-native-google-signin": "^1.0.0-rc3",
+    "react-native-languages": "^2.0.1",
+    "react-native-splash-screen": "^3.1.1",
+    "react-native-vector-icons": "^5.0.0",
+    "react-native-view-overflow": "^0.0.3",
+    "react-native-view-shot": "^2.4.0",
+    "react-navigation": "^2.12.1",
+    "redux-persist-filesystem-storage": "^1.2.0"
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts/"
+    ]
+  }
+}

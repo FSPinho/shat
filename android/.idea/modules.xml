@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-admob/android/react-native-admob.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-admob/android/react-native-admob.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-fetch-blob/android/react-native-fetch-blob.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-fetch-blob/android/react-native-fetch-blob.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-firebase/android/react-native-firebase.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-firebase/android/react-native-firebase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-google-analytics-bridge/android/react-native-google-analytics-bridge.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-google-analytics-bridge/android/react-native-google-analytics-bridge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-google-signin/android/react-native-google-signin.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-google-signin/android/react-native-google-signin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-languages/android/react-native-languages.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-languages/android/react-native-languages.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-splash-screen/android/react-native-splash-screen.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-splash-screen/android/react-native-splash-screen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/react-native-vector-icons.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/react-native-vector-icons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-view-overflow/android/react-native-view-overflow.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-view-overflow/android/react-native-view-overflow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-view-shot/android/react-native-view-shot.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-view-shot/android/react-native-view-shot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shat.iml" filepath="$PROJECT_DIR$/shat.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "154589217883",
+    "firebase_url": "https://verretech-6a289.firebaseio.com",
+    "project_id": "verretech-6a289",
+    "storage_bucket": "verretech-6a289.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154589217883:android:9e6fd070d8eadfa4",
+        "android_client_info": {
+          "package_name": "com.cytech.shat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154589217883-mba6hklnkubn6oh91b9qism5hkvkcpv6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cytech.shat",
+            "certificate_hash": "12ed8373950938e3c82566fa53a5b466bf12a54a"
+          }
+        },
+        {
+          "client_id": "154589217883-779pf7vrolad99qjufnnbd42u5vnrv1m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAurN9C_wAX27zeLcZmrIudcj5YgQK35z8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "154589217883-779pf7vrolad99qjufnnbd42u5vnrv1m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
