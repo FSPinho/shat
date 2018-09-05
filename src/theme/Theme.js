@@ -321,8 +321,8 @@ export default {
     palette: {
         ...palette,
 
-        Primary: palette.Indigo,
-        Accent: palette.Cyan,
+        Primary: palette.Red,
+        Accent: palette.Amber,
     },
     paper: {
         borderRadius: 8,

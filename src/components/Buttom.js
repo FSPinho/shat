@@ -9,7 +9,7 @@ class Buttom extends React.Component {
 
     render() {
 
-        const { styles, style, flat, children, onPress, color, theme, ...props } = this.props
+        const { styles, style, flat, circle, children, onPress, color, theme, ...props } = this.props
 
         return flat ? (
             <Box
@@ -17,7 +17,7 @@ class Buttom extends React.Component {
                     styles.root, { elevation: 0, backgroundColor: color || 'transparent' }, style
                 ]} {...props} centralize>
                 <Touchable onPress={onPress} primary>
-                    <Box style={styles.inner} centralize>
+                    <Box style={circle ? styles.innerCircle : styles.inner} centralize>
                         {typeof children === 'string' ? <Text numberOfLines={1} style={styles.textFlat}>{children.toUpperCase()}</Text> : children}
                     </Box>
                 </Touchable>
@@ -25,10 +25,10 @@ class Buttom extends React.Component {
         ) : (
                 <Box
                     style={[
-                        styles.root, { backgroundColor: color || theme.palette.Primary['500'].color }, style
+                        styles.root, { backgroundColor: color || theme.palette.Primary['700'].color }, style
                     ]} {...props} centralize>
                     <Touchable onPress={onPress}>
-                        <Box style={styles.inner} centralize>
+                        <Box style={circle ? styles.innerCircle : styles.inner} centralize>
                             {typeof children === 'string' ? <Text numberOfLines={1} style={styles.text}>{children.toUpperCase()}</Text> : children}
                         </Box>
                     </Touchable>
@@ -41,19 +41,22 @@ const styles = (theme) => StyleSheet.create({
     root: {
         ...theme.paper,
         borderRadius: 48,
-        elevation: 2,
-        height: 36
+        elevation: 2
     },
     inner: {
-        paddingLeft: 16,
-        paddingRight: 16,
-        height: 36
+        padding: 8,
+        paddingLeft: 24,
+        paddingRight: 24
+    },
+    innerCircle: {
+        padding: 8,
     },
     text: {
-        color: theme.palette.Primary['500'].text
+        color: theme.palette.Primary['500'].text,
+
     },
     textFlat: {
-        color: theme.palette.Black.Secondary.color
+        color: theme.palette.Black.Secondary.color,
     }
 })
 

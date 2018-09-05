@@ -1,8 +1,12 @@
 import React from 'react';
 import { translate } from 'react-i18next';
+import { Image } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { createStackNavigator } from 'react-navigation';
+import { Box } from '../components';
+import Buttom from '../components/Buttom';
 import { About, Home } from '../pages';
+import { Auth } from '../services';
 import { withTheme } from '../theme';
 
 export const Routes = {
@@ -21,10 +25,10 @@ class RootNavigation extends React.Component {
             navigationOptions: ({ navigation }) => {
                 return {
                     headerStyle: {
-                        backgroundColor: theme.palette.Primary['500'].color,
+                        ...theme.page,
                         elevation: navigation.getParam('showHeaderShadow', undefined) ? 4 : 0
                     },
-                    headerTintColor: theme.palette.Primary['500'].text
+                    headerTintColor: theme.palette.Primary['700'].color
                 }
             }
         }
@@ -73,7 +77,39 @@ class RootNavigation extends React.Component {
         }
 
         this.Navigator = createStackNavigator({
-            [Routes.Home]: { screen: Home, },
+            [Routes.Home]: {
+                screen: Home,
+                navigationOptions: ({ navigation }) => {
+                    const user = Auth.getCurrentUser()
+
+                    return {
+                        title: t('home-screen-title'),
+                        headerRight:
+                            <Box style={{ paddingRight: 16, paddingLeft: 16 }} centralize>
+
+                                <Box style={{ paddingRight: 8 }}>
+                                    <Buttom circle flat onPress={() => navigation.navigate(Routes.About)} style={{ elevation: 0 }}>
+                                        <Icon name={'information'} size={24} color={theme ? theme.palette.Primary['700'].color : undefined} />
+                                    </Buttom>
+                                </Box>
+
+                                {!!user && <Image style={{
+                                    width: 36,
+                                    height: 36,
+                                    borderRadius: 192,
+                                    marginRight: 16
+                                }} source={{ uri: user._user.photoURL }} />}
+
+                                <Buttom
+                                    onPress={() => Auth.doToggleAuth(t)}>
+
+                                    {!!user ? t('sign-out') : t('sign-in')}
+
+                                </Buttom>
+                            </Box>
+                    }
+                }
+            },
             [Routes.About]: { screen: About, }
         }, stackNavigationOptions)
     }
