@@ -29,6 +29,7 @@ class Page extends React.Component {
         return (
             <Box fitAbsolute
                  style={_styles}
+                 alignItems={'stretch'}
                  {...anotherProps}>
 
                 {children}
@@ -50,7 +51,7 @@ Page.propTypes = {
 
 const styles = (theme) => StyleSheet.create({
     root: {
-        backgroundColor: theme.page.backgroundColor,
+        backgroundColor: theme.page.backgroundColor
     },
     noBackground: {
         backgroundColor: 'transparent'

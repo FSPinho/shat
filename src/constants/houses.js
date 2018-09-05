@@ -1,40 +1,40 @@
 
-export const houses = {
-    grifinoria: 'grifinoria',
-    corvinal: 'corvinal',
-    lufalufa: 'lufalufa',
-    sonserina: 'sonserina'
+export const Houses = {
+    Grifinoria: 'grifinoria',
+    Corvinal: 'corvinal',
+    Lufalufa: 'lufalufa',
+    Sonserina: 'sonserina'
 }
 
-export const tags = {
-    courage: 'courage',
-    companionship: 'companionship',
-    actor: 'actor',
-    singer: 'singer',
-    athlete: 'athlete',
-    fire: 'fire',
+export const Tags = {
+    Courage: 'courage',
+    Companionship: 'companionship',
+    Actor: 'actor',
+    Singer: 'singer',
+    Athlete: 'athlete',
+    Fire: 'fire',
 
-    insight: 'insight', // Perspicácia 
-    intelligence: 'intelligence',
-    creativity: 'creativity',
-    wisdom: 'wisdom',
-    air: 'air',
+    Insight: 'insight', // Perspicácia 
+    Intelligence: 'intelligence',
+    Creativity: 'creativity',
+    Wisdom: 'wisdom',
+    Air: 'air',
 
-    work: 'work',
-    patience: 'patience',
-    loyalty: 'loyalty',
-    honesty: 'honesty',
-    ground: 'ground',
+    Work: 'work',
+    Patience: 'patience',
+    Loyalty: 'loyalty',
+    Honesty: 'honesty',
+    Ground: 'ground',
 
-    astute: 'astute',
-    resourceful: 'resourceful',
-    ambitious: 'ambitious',
-    water: 'water'
+    Astute: 'astute',
+    Resourceful: 'resourceful',
+    Ambitious: 'ambitious',
+    Water: 'water'
 }
 
-export const houseMetadata = {
+export const HouseMetadata = {
 
-    [houses.grifinoria]: {
+    [Houses.Grifinoria]: {
         title: 'Grifinória',
         description:
             `Grifinória é uma das quatro Casas da Escola de Magia e Bruxaria de Hogwarts. 
@@ -42,82 +42,82 @@ export const houseMetadata = {
             Fundada por Gódrico Grifinória, seu animal símbolo é o leão, e suas cores são 
             o vermelho e o dourado.`,
         tags: [
-            tags.courage,
-            tags.companionship,
-            tags.actor,
-            tags.singer,
-            tags.athlete,
-            tags.fire
+            Tags.Courage,
+            Tags.Companionship,
+            Tags.Actor,
+            Tags.Singer,
+            Tags.Athlete,
+            Tags.Fire
         ],
     },
 
-    [houses.corvinal]: {
+    [Houses.Corvinal]: {
         title: 'Corvinal',
         description:
             `Corvinal é uma das quatro Casas da Escola de Magia e Bruxaria Hogwarts, fundada 
             por Rowena Ravenclaw. Suas cores oficiais são o azul e o bronze, e seu símbolo é 
             a águia.`,
         tags: [
-            tags.insight,
-            tags.intelligence,
-            tags.creativity,
-            tags.wisdom,
-            tags.air
+            Tags.Insight,
+            Tags.Intelligence,
+            Tags.Creativity,
+            Tags.Wisdom,
+            Tags.Air
         ]
     },
 
-    [houses.lufalufa]: {
+    [Houses.Lufalufa]: {
         title: 'Lufa-Lufa',
         description:
             `Lufa-Lufa é uma das quatro Casas da Escola de Magia e Bruxaria de Hogwarts. 
             Sua fundadora é a bruxa Helga Lufa-Lufa. Seu animal símbolo é o texugo, e 
             suas cores são o amarelo e o preto.`,
         tags: [
-            tags.work,
-            tags.patience,
-            tags.loyalty,
-            tags.honesty,
-            tags.ground,
+            Tags.Work,
+            Tags.Patience,
+            Tags.Loyalty,
+            Tags.Honesty,
+            Tags.Ground,
         ]
     },
 
-    [houses.sonserina]: {
+    [Houses.Sonserina]: {
         title: 'Sonserina',
         description:
             `Sonserina é uma das quatro Casas da Escola de Magia e Bruxaria de Hogwarts, 
             foi fundada por Salazar Sonserina. O seu animal símbolo é a cobra e 
             suas cores são o verde e o prata.`,
         tags: [
-            tags.astute,
-            tags.ambitious,
-            tags.resourceful,
-            tags.water
+            Tags.Astute,
+            Tags.Ambitious,
+            Tags.Resourceful,
+            Tags.Water
         ]
     }
 }
 
-export const tagsMetadata = {
-    [tags.courage]: { title: 'Coragem' },
-    [tags.companionship]: { title: 'Companheirismo' },
-    [tags.actor]: { title: 'Desinibido' },
-    [tags.singer]: { title: 'Desinibido' },
-    [tags.athlete]: { title: 'Desinibido' },
-    [tags.fire]: { title: 'Intenso' },
+export const TagsMetadata = {
+    [Tags.Courage]: { title: 'Coragem' },
+    [Tags.Companionship]: { title: 'Companheirismo' },
+    [Tags.Actor]: { title: 'Desinibido' },
+    [Tags.Singer]: { title: 'Desinibido' },
+    [Tags.Athlete]: { title: 'Desinibido' },
+    [Tags.Fire]: { title: 'Intenso' },
 
-    [tags.insight]: { title: 'Perspicácia' },
-    [tags.intelligence]: { title: 'Inteligência' },
-    [tags.creativity]: { title: 'Criatividade' },
-    [tags.wisdom]: { title: 'Sabedoria' },
-    [tags.air]: { title: 'Levesa' },
+    [Tags.Insight]: { title: 'Perspicácia' },
+    [Tags.Intelligence]: { title: 'Inteligência' },
+    [Tags.Creativity]: { title: 'Criatividade' },
+    [Tags.Wisdom]: { title: 'Sabedoria' },
+    [Tags.Air]: { title: 'Levesa' },
 
-    [tags.work]: { title: 'Esforço' },
-    [tags.patience]: { title: 'Paciência' },
-    [tags.loyalty]: { title: 'Lealdade' },
-    [tags.honesty]: { title: 'Honestidade' },
-    [tags.ground]: { title: 'Simplicidade' },
+    [Tags.Work]: { title: 'Esforço' },
+    [Tags.Patience]: { title: 'Paciência' },
+    [Tags.Loyalty]: { title: 'Lealdade' },
+    [Tags.Honesty]: { title: 'Honestidade' },
+    [Tags.Ground]: { title: 'Simplicidade' },
 
-    [tags.astute]: { title: 'Astúcia' },
-    [tags.resourceful]: { title: 'Engenhosidade' },
-    [tags.ambitious]: { title: 'Ambição' },
-    [tags.water]: { title: 'Flexibilidade' }
+    [Tags.Astute]: { title: 'Astúcia' },
+    [Tags.Resourceful]: { title: 'Engenhosidade' },
+    [Tags.Ambitious]: { title: 'Ambição' },
+    [Tags.Water]: { title: 'Flexibilidade' }
 }

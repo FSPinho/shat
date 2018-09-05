@@ -1,12 +1,15 @@
 {
   "common": {
     "home-screen-title": "Sorting Hat",
+
     "ok": "OK",
     "cancel": "CANCEL",
+    "begin-sorting": "BEGIN SORTING ",
 
     "sign-out": "Sign Out",
     "sign-out-error": "Sign out error!",
     "sign-in": "Sign In",
-    "sign-in-error": "Sign in error!"
+    "sign-in-error": "Sign in error!",
+    "sign-in-wellcome": "Wellcame back, {{name}}!"
   }
 }

@@ -4,24 +4,19 @@ const tracker = new GoogleAnalyticsTracker("UA-124619346-1")
 
 const PREFIX = __DEV__ ? 'DEV_' : 'PROD_'
 const SCREEN_HOME_VIEW = PREFIX + 'HOME'
-const SCREEN_CANDIDATES_VIEW = PREFIX + 'CANDIDATES'
-const SCREEN_CANDIDATE_DETAILS_VIEW = PREFIX + 'CANDIDATE_DETAILS'
-const SCREEN_CANDIDATE_PRISE_VIEW = PREFIX + 'CANDIDATE_PRISE'
-const SCREEN_CANDIDATE_CRITICISM_VIEW = PREFIX + 'CANDIDATE_CRITICISM'
-const EVENT_CATEGORY_COMMON = PREFIX + 'COMMON'
-const EVENT_CANDIDATE_DETAILS_VIEW = PREFIX + 'EVENT_CANDIDATE_DETAILS'
-const EVENT_CANDIDATE_DETAILS_COMMENT = PREFIX + 'EVENT_CANDIDATE_DETAILS_COMMENT'
+const SCREEN_SORTING_VIEW = PREFIX + 'SORTING'
+
+const EVENT_SORTING_DONE = PREFIX + 'EVENT_SORTING_DONE'
+const EVENT_SORTING_AGAIN = PREFIX + 'EVENT_SORTING_AGAIN'
 const EVENT_ADS = PREFIX + 'EVENT_ADS'
 const EVENT_ADS_REWARDED = PREFIX + 'EVENT_ADS_REWARDED'
 
 export default {
     doSendHomePageView: () => tracker.trackScreenView(SCREEN_HOME_VIEW),
-    doSendCandidatesPageView: () => tracker.trackScreenView(SCREEN_CANDIDATES_VIEW),
-    doSendCandidateDetailsPageView: () => tracker.trackScreenView(SCREEN_CANDIDATE_DETAILS_VIEW),
-    doSendCandidatePrisePageView: () => tracker.trackScreenView(SCREEN_CANDIDATE_PRISE_VIEW),
-    doSendCandidateCriticismPageView: () => tracker.trackScreenView(SCREEN_CANDIDATE_CRITICISM_VIEW),
-    doSendCandidateDetailsEvent: (c) => tracker.trackEvent(EVENT_CATEGORY_COMMON, EVENT_CANDIDATE_DETAILS_VIEW, { label: c.name, value: parseInt(c.number) }),
-    doSendCandidateDetailsCommentEvent: (c) => tracker.trackEvent(EVENT_CATEGORY_COMMON, EVENT_CANDIDATE_DETAILS_COMMENT, { label: c.name, value: parseInt(c.number) }),
+    doSendSOrtingPageView: () => tracker.trackScreenView(SCREEN_SORTING_VIEW),
+    
+    doSendSortingDoneEvent: (house) => tracker.trackEvent(EVENT_CATEGORY_COMMON, EVENT_SORTING_DONE, { label: house.title, value: 1.0 }),
+    doSendSortingAgainEvent: (house) => tracker.trackEvent(EVENT_CATEGORY_COMMON, EVENT_SORTING_AGAIN, { label: house.title, value: 1.0 }),
     doSendAdsEvent: () => tracker.trackEvent(EVENT_CATEGORY_COMMON, EVENT_ADS),
     doSendAdsRewardedEvent: () => tracker.trackEvent(EVENT_CATEGORY_COMMON, EVENT_ADS_REWARDED),
 }

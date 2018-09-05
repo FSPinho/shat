@@ -43,6 +43,8 @@ const styles = (theme) => StyleSheet.create({
     root: {
         position: 'relative',
         padding: 0,
+        borderWidth: 2,
+        borderColor: theme.palette.BlueGrey['500'].color,
 
         ...theme.paper
     },

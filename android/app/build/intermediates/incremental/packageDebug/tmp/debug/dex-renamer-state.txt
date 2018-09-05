@@ -1,4 +1,4 @@
-#Wed Sep 05 00:30:49 BRT 2018
+#Wed Sep 05 09:38:42 BRT 2018
 base.0=/home/felipe/Projects/personal/shat/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

@@ -321,11 +321,11 @@ export default {
     palette: {
         ...palette,
 
-        Primary: palette.Red,
-        Accent: palette.Amber,
+        Primary: palette.BlueGrey,
+        Accent: palette.Cyan,
     },
     paper: {
-        borderRadius: 8,
+        borderRadius: 4,
         backgroundColor: palette.White['500'].color,
         elevation: .5
     },
