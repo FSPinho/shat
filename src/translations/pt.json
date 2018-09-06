@@ -4,7 +4,10 @@
 
     "ok": "OK",
     "cancel": "CANCELAR",
+    "next": "PRÓXIMO",
+    "finish": "QUAL SERÁ MINHA CASA?",
     "begin-sorting": "INICIAR SELEÇÂO DA SUA CASA",
+    "calculating": "Deixe-me ver...",
 
     "sign-out": "Sair",
     "sign-out-error": "Não foi possível entrar com o Google!",

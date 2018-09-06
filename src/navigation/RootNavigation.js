@@ -83,8 +83,8 @@ class RootNavigation extends React.Component {
         const navigationPersistenceKey = __DEV__ ? "NavigationStateDEV" : null;
 
         return (
-            <Navigator persistenceKey={navigationPersistenceKey} />
-            // <Navigator />
+            // <Navigator persistenceKey={navigationPersistenceKey} />
+            <Navigator />
         )
     }
 }

@@ -4,7 +4,10 @@
 
     "ok": "OK",
     "cancel": "CANCEL",
+    "next": "NEXT",
+    "finish": "FINISH",
     "begin-sorting": "BEGIN SORTING ",
+    "calculating": "Let me see...",
 
     "sign-out": "Sign Out",
     "sign-out-error": "Sign out error!",

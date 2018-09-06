@@ -3,11 +3,12 @@ import { translate } from 'react-i18next';
 import { StyleSheet } from 'react-native';
 import firebase from 'react-native-firebase';
 import Icon from 'react-native-vector-icons/SimpleLineIcons';
+import AsyncStorage from 'redux-persist-filesystem-storage';
 import { Box, Page, Spacer } from '../components';
 import Buttom from '../components/Buttom';
 import Text from '../components/Text';
 import { Routes } from '../navigation/RootNavigation';
-import Analytics from '../services/Analytics';
+import { Auth } from '../services';
 import { withTheme } from '../theme';
 import FadeFromDown from '../transitions/FadeFromDown';
 
@@ -22,7 +23,7 @@ class Home extends React.Component {
     }
 
     async componentDidMount() {
-        Analytics.doSendHomePageView()
+        // Analytics.doSendHomePageView()
 
         this.authListenerUnsibscriber = firebase.auth().onAuthStateChanged(user => {
             const params = this.props.navigation.state.params || {}
@@ -31,14 +32,31 @@ class Home extends React.Component {
                 user,
             })
         })
+
+        this.doUpdateStoredDataInterval = setInterval(this.doUpdateStoredData, 1000)
     }
 
     async componentWillUnmount() {
         this.authListenerUnsibscriber()
+
+        clearInterval(this.doUpdateStoredDataInterval)
+    }
+
+    doUpdateStoredData = async () => {
+        try {
+            const { house, user } = JSON.parse(await AsyncStorage.getItem('shat:house'))
+            console.log(house, user)
+        } catch (e) {
+            /** ... */
+        }
     }
 
     doStartSorting = async () => {
-        this.props.navigation.navigate(Routes.Sorting)
+        if (!await Auth.isAuth())
+            await Auth.doSignIn(this.props.t)
+
+        if (await Auth.isAuth())
+            this.props.navigation.navigate(Routes.Sorting)
     }
 
     render() {

@@ -14,7 +14,7 @@ export const Questions = [
         options: [
             { text: 'Nenhum', tags: [Tags.Ambitious, Tags.Water] },
             { text: 'Apenas os mais próximos', tags: [Tags.Companionship, Tags.Honesty, Tags.Loyalty, Tags.Ground] },
-            { text: 'Todos, quanto mais, melhor!', tags[Tags.Companionship, Tags.Fire] },
+            { text: 'Todos, quanto mais, melhor!', tags: [Tags.Companionship, Tags.Fire] },
         ]
     },
     {
@@ -66,3 +66,19 @@ export const Questions = [
         ]
     },
 ]
+
+export const getQuestions = (size) => {
+    const qs = []
+    const alreadyTaked = q =>
+        !!qs.filter(q_ => q.text === q_.text)[0]
+    
+    for(let i = 0; i < size; i++) {
+        let q = undefined
+        while(!q || alreadyTaked(q)) {
+            q = Questions[parseInt(Math.random() * Questions.length)]
+        }
+        qs.push(q)
+    }
+
+    return qs
+}

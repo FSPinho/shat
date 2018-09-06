@@ -33,7 +33,7 @@ class FadeFromDown extends React.Component {
 
         const { visible, style, ...props } = this.props
 
-        return (<Animated.View style={[
+        return (<Animated.View pointerEvents={visible ? 'auto' : 'none'} style={[
             {
                 transform: [{
                     translateY: this.state.progress.interpolate({

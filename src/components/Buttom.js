@@ -9,7 +9,10 @@ import Touchable from './Touchable';
 class Buttom extends React.Component {
 
     onPress = () => {
-        setTimeout(this.props.onPress, 320)
+        if (this.props.onPress)
+            setTimeout(this.props.onPress, 320)
+        else
+            console.warn("Buttom:onPress - No onPress callback found!")
     }
 
     render() {
@@ -23,7 +26,7 @@ class Buttom extends React.Component {
                 ]} {...props} centralize>
                 <Touchable onPress={this.onPress} primary>
                     <Box style={circle ? styles.innerCircleFlat : styles.innerFlat} centralize>
-                        {typeof children === 'string' ? <Text numberOfLines={1} style={styles.textFlat}>{children.toUpperCase()}</Text> : children}
+                        {typeof children === 'string' ? <Text style={styles.textFlat}>{children.toUpperCase()}</Text> : children}
                     </Box>
                 </Touchable>
             </Box>
@@ -34,7 +37,7 @@ class Buttom extends React.Component {
                     ]} {...props} centralize>
                     <Touchable onPress={this.onPress}>
                         <Box style={circle ? styles.innerCircle : styles.inner} centralize>
-                            {typeof children === 'string' ? <Text numberOfLines={1} style={styles.text}>{children.toUpperCase()}</Text> : children}
+                            {typeof children === 'string' ? <Text style={styles.text}>{children.toUpperCase()}</Text> : children}
                         </Box>
                     </Touchable>
                 </Box>
@@ -73,9 +76,11 @@ const styles = (theme) => StyleSheet.create({
     },
     text: {
         color: theme.palette.Primary['500'].text,
+        textAlign: 'center',
     },
     textFlat: {
         color: theme.palette.Primary['500'].color,
+        textAlign: 'center',
     }
 })
 
