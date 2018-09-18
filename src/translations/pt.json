@@ -1,18 +1,21 @@
 {
   "common": {
     "home-screen-title": "Chapéu Seletor",
-
     "ok": "OK",
     "cancel": "CANCELAR",
     "next": "PRÓXIMO",
     "finish": "QUAL SERÁ MINHA CASA?",
-    "begin-sorting": "INICIAR SELEÇÂO DA SUA CASA",
+    "begin-sorting": "INICIAR SELEÇÃO DA SUA CASA",
+    "begin-sorting-again": "CHAPÉU, NÃO QUERO IR PARA {{house}}!",
     "calculating": "Deixe-me ver...",
-
+    "your-house-is": "Sua casa em Hogwarts é:",
+    "send-email": "Envie-nos um email",
+    "send-wp-message": "Envie-nos uma mensagem",
+    "see-our-site": "Dê uma olhada em nosso site",
     "sign-out": "Sair",
     "sign-out-error": "Não foi possível entrar com o Google!",
     "sign-in": "Entrar",
-    "sign-in-error": "Não foi possível deslogar!",
+    "sign-in-error": "Não foi possível logar com o Google!",
     "sign-in-wellcome": "Bem vindo, {{name}}!"
   }
 }

@@ -1,3 +1,18 @@
+// Begin One Signal
+
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' } // Gradle Plugin Portal 
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.10.0, 0.99.99]'
+    }
+}
+
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+// End One Signal
+
 apply plugin: "com.android.application"
 
 import com.android.build.OutputFile
@@ -26,6 +41,9 @@ android {
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
+
+        // One Signal
+        multiDexEnabled true
     }
     signingConfigs {
         release {
@@ -67,6 +85,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-onesignal')
     compile project(':react-native-view-overflow')
     compile project(':react-native-splash-screen')
     compile project(':react-native-google-signin')
@@ -85,6 +104,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:16.0.3'
     implementation 'com.google.firebase:firebase-auth:16.0.2'
     implementation "com.google.firebase:firebase-database:16.0.1"
+
+    // One Signal
+    implementation 'com.android.support:multidex:1.0.0'
 }
 
 task copyDownloadableDepsToLibs(type: Copy) {

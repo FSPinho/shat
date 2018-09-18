@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="default_web_client_id" translatable="false">328465668057-dhjlf5sc996vjaou73blr5ds4c4al6n0.apps.googleusercontent.com</string>
-    <string name="firebase_database_url" translatable="false">https://cytech-candidates.firebaseio.com</string>
-    <string name="gcm_defaultSenderId" translatable="false">328465668057</string>
-    <string name="google_api_key" translatable="false">AIzaSyATvQA5RwI9M4rPpwE_qmXyrZ_BOqCWrdM</string>
-    <string name="google_app_id" translatable="false">1:328465668057:android:decce53526dda978</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyATvQA5RwI9M4rPpwE_qmXyrZ_BOqCWrdM</string>
-    <string name="google_storage_bucket" translatable="false">cytech-candidates.appspot.com</string>
-    <string name="project_id" translatable="false">cytech-candidates</string>
+    <string name="default_web_client_id" translatable="false">154589217883-779pf7vrolad99qjufnnbd42u5vnrv1m.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://verretech-6a289.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">154589217883</string>
+    <string name="google_api_key" translatable="false">AIzaSyAurN9C_wAX27zeLcZmrIudcj5YgQK35z8</string>
+    <string name="google_app_id" translatable="false">1:154589217883:android:9e6fd070d8eadfa4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAurN9C_wAX27zeLcZmrIudcj5YgQK35z8</string>
+    <string name="google_storage_bucket" translatable="false">verretech-6a289.appspot.com</string>
+    <string name="project_id" translatable="false">verretech-6a289</string>
 </resources>

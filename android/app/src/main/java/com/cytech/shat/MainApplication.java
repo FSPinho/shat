@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.cytech.shat.data.DataManagerPackage;
 import com.facebook.react.ReactApplication;
+import com.geektime.rnonesignalandroid.ReactNativeOneSignalPackage;
 import com.entria.views.RNViewOverflowPackage;
 
 import co.apptailor.googlesignin.RNGoogleSigninPackage;
@@ -42,7 +43,8 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
             return Arrays.<ReactPackage>asList(
                     new MainReactPackage(),
-            new RNViewOverflowPackage(),
+                    new ReactNativeOneSignalPackage(),
+                    new RNViewOverflowPackage(),
                     new RNGoogleSigninPackage(),
                     new RNFirebasePackage(),
                     new RNFirebaseAuthPackage(),

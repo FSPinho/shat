@@ -12,12 +12,13 @@ class Text_ extends React.Component {
 
     render() {
 
-        const { size, color, weight, style, styles, ...props } = this.props
+        const { size, color, weight, center, style, styles, ...props } = this.props
 
         return <Text style={[{
             ...this.getSize(size),
             fontFamily: 'JosefinSans-' + (weight || 'Regular'),
-            color
+            color,
+            textAlign: center ? 'center' : 'left'
         }, style]} {...props} />
     }
 }

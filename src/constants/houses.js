@@ -37,10 +37,7 @@ export const HouseMetadata = {
     [Houses.Grifinoria]: {
         title: 'Grifinória',
         description:
-            `Grifinória é uma das quatro Casas da Escola de Magia e Bruxaria de Hogwarts. 
-            Seus membros tem como principais características a coragem e o companheirismo. 
-            Fundada por Gódrico Grifinória, seu animal símbolo é o leão, e suas cores são 
-            o vermelho e o dourado.`,
+            `Grifinória é uma das quatro Casas da Escola de Magia e Bruxaria de Hogwarts. Seus membros tem como principais características a coragem e o companheirismo. Fundada por Gódrico Grifinória, seu animal símbolo é o leão, e suas cores são o vermelho e o dourado.`,
         tags: [
             Tags.Courage,
             Tags.Companionship,
@@ -49,50 +46,48 @@ export const HouseMetadata = {
             Tags.Athlete,
             Tags.Fire
         ],
+        image: require('../resources/images/g.png')
     },
 
     [Houses.Corvinal]: {
         title: 'Corvinal',
         description:
-            `Corvinal é uma das quatro Casas da Escola de Magia e Bruxaria Hogwarts, fundada 
-            por Rowena Ravenclaw. Suas cores oficiais são o azul e o bronze, e seu símbolo é 
-            a águia.`,
+            `Corvinal é uma das quatro Casas da Escola de Magia e Bruxaria Hogwarts, fundada por Rowena Ravenclaw. Suas cores oficiais são o azul e o bronze, e seu símbolo é a águia.`,
         tags: [
             Tags.Insight,
             Tags.Intelligence,
             Tags.Creativity,
             Tags.Wisdom,
             Tags.Air
-        ]
+        ],
+        image: require('../resources/images/r.png')
     },
 
     [Houses.Lufalufa]: {
         title: 'Lufa-Lufa',
         description:
-            `Lufa-Lufa é uma das quatro Casas da Escola de Magia e Bruxaria de Hogwarts. 
-            Sua fundadora é a bruxa Helga Lufa-Lufa. Seu animal símbolo é o texugo, e 
-            suas cores são o amarelo e o preto.`,
+            `Lufa-Lufa é uma das quatro Casas da Escola de Magia e Bruxaria de Hogwarts. Sua fundadora é a bruxa Helga Lufa-Lufa. Seu animal símbolo é o texugo, e suas cores são o amarelo e o preto.`,
         tags: [
             Tags.Work,
             Tags.Patience,
             Tags.Loyalty,
             Tags.Honesty,
             Tags.Ground,
-        ]
+        ],
+        image: require('../resources/images/h.png')
     },
 
     [Houses.Sonserina]: {
         title: 'Sonserina',
         description:
-            `Sonserina é uma das quatro Casas da Escola de Magia e Bruxaria de Hogwarts, 
-            foi fundada por Salazar Sonserina. O seu animal símbolo é a cobra e 
-            suas cores são o verde e o prata.`,
+            `Sonserina é uma das quatro Casas da Escola de Magia e Bruxaria de Hogwarts, foi fundada por Salazar Sonserina. O seu animal símbolo é a cobra e suas cores são o verde e o prata.`,
         tags: [
             Tags.Astute,
             Tags.Ambitious,
             Tags.Resourceful,
             Tags.Water
-        ]
+        ],
+        image: require('../resources/images/s.png')
     }
 }
 

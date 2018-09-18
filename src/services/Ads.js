@@ -41,7 +41,7 @@ export default {
         } else {
             console.log('WallpaperGenerator:doShowAds - PROD MODE!!!')
             await AdMobInterstitial.setAdUnitID('ca-app-pub-5594222713152935/5307373982');
-            await AdMobRewarded.setAdUnitID('ca-app-pub-5594222713152935/9719403464');
+            await AdMobRewarded.setAdUnitID('ca-app-pub-5594222713152935/7613136373');
         }
 
         try {

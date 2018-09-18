@@ -1,4 +1,4 @@
-com.cytech.candidates
+com.cytech.shat
 int anim abc_fade_in 0x7f010000
 int anim abc_fade_out 0x7f010001
 int anim abc_grow_fade_in_from_bottom 0x7f010002
@@ -670,12 +670,16 @@ int drawable src_resources_flags_tocantins 0x7f060091
 int drawable src_resources_images_coffee 0x7f060092
 int drawable src_resources_images_deputadoestadual 0x7f060093
 int drawable src_resources_images_deputadofederal 0x7f060094
-int drawable src_resources_images_governador 0x7f060095
-int drawable src_resources_images_noimage 0x7f060096
-int drawable src_resources_images_president 0x7f060097
-int drawable src_resources_images_senador 0x7f060098
-int drawable tooltip_frame_dark 0x7f060099
-int drawable tooltip_frame_light 0x7f06009a
+int drawable src_resources_images_g 0x7f060095
+int drawable src_resources_images_governador 0x7f060096
+int drawable src_resources_images_h 0x7f060097
+int drawable src_resources_images_noimage 0x7f060098
+int drawable src_resources_images_president 0x7f060099
+int drawable src_resources_images_r 0x7f06009a
+int drawable src_resources_images_s 0x7f06009b
+int drawable src_resources_images_senador 0x7f06009c
+int drawable tooltip_frame_dark 0x7f06009d
+int drawable tooltip_frame_light 0x7f06009e
 int id ALT 0x7f070000
 int id CTRL 0x7f070001
 int id FUNCTION 0x7f070002

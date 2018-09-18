@@ -28,7 +28,7 @@ export const Questions = [
     {
         text: 'O que você faria ao descobrir que o namorado da sua melhor amiga tem uma amante?',
         options: [
-            { text: 'Conteria imediatamente', tags: [Tags.Courage, Tags.Companionship, Tags.Loyalty, Tags.Honesty, Tags.Fire] },
+            { text: 'Contaria imediatamente', tags: [Tags.Courage, Tags.Companionship, Tags.Loyalty, Tags.Honesty, Tags.Fire] },
             { text: 'Pensaria numa maneira de ela descobrir sozinha', tags: [Tags.Intelligence, Tags.Astute, Tags.Creativity, Tags.Honesty, Tags.Resourceful, Tags.Air] },
             { text: 'Isso não é da minha conta', tags: [Tags.Water] },
         ]
@@ -63,6 +63,31 @@ export const Questions = [
             { text: 'Aceito, pois prefiro me arrepender do que fiz', tags: [Tags.Courage, Tags.Insight, Tags.Fire] },
             { text: 'Recuso, pois não gosto de arriscar', tags: [Tags.Honesty, Tags.Patience, Tags.Ground] },
             { text: 'Procuro uma alternativa para diminuir o risco', tags: [Tags.Insight, Tags.Intelligence, Tags.Astute, Tags.Patience, Tags.Air] },
+        ]
+    },
+    {
+        text: 'Em qual das profissões abaixo você trabalharia?',
+        options: [
+            { text: 'Cantor', tags: [Tags.Courage, Tags.Insight, Tags.Ambitious, Tags.Fire] },
+            { text: 'Escultor', tags: [Tags.Work, Tags.Patience, Tags.Intelligence, Tags.Ground] },
+            { text: 'Ministro da Magia', tags: [Tags.Intelligence, Tags.Ambitious, Tags.Astute, Tags.Resourceful, Tags.Water] },
+        ]
+    },
+    {
+        text: 'Qual elemento você mais gosta em filmes?',
+        options: [
+            { text: 'Ação', tags: [Tags.Courage, Tags.Ambitious, Tags.Fire] },
+            { text: 'Romance', tags: [Tags.Water, Tags.Fire, Tags.Ground, Tags.Air] },
+            { text: 'Mistérios', tags: [Tags.Intelligence, Tags.Astute, Tags.Astute, Tags.Air] },
+        ]
+    },
+    {
+        text: 'Como você descreveria sua personalidade?',
+        options: [
+            { text: 'Vivo intensamente, sou sincero e tenho grandes amizades', tags: [Tags.Fire] },
+            { text: 'Sou ambicioso, penso alto, quero chegar longe', tags: [Tags.Water] },
+            { text: 'Sou leve e traquilo, gosto de pensar antes de agir', tags: [Tags.Air] },
+            { text: 'Preso por honestidade e trabalho duro, não ligo para aparências', tags: [Tags.Ground] },
         ]
     },
 ]

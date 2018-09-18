@@ -1,14 +1,17 @@
 {
   "common": {
     "home-screen-title": "Sorting Hat",
-
     "ok": "OK",
     "cancel": "CANCEL",
     "next": "NEXT",
     "finish": "FINISH",
     "begin-sorting": "BEGIN SORTING ",
+    "begin-sorting-again": "BEGIN SORTING AGAIN",
     "calculating": "Let me see...",
-
+    "your-house-is": "Your Hogwarts' house is:",
+    "send-email": "Send us an email",
+    "send-wp-message": "Send us a message",
+    "see-our-site": "Take a look at our website",
     "sign-out": "Sign Out",
     "sign-out-error": "Sign out error!",
     "sign-in": "Sign In",

@@ -15,28 +15,24 @@ class Sorting extends React.Component {
         header: null,
     }
 
-    constructor(props) {
-        super(props)
-
+    async componentDidMount() {
         const user = Auth.getCurrentUser()
 
         if (!user) {
             this.props.navigation.goBack()
         } else {
-            this.state = {
+            this.setState({
                 user,
-                script: getRandomScript(user),
+                script: getRandomScript(user, !!this.props.navigation.getParam('houseToExclude', undefined)),
                 currentStep: 0,
                 answers: [],
                 finished: false,
                 calculating: false,
                 betterHouse: undefined
-            }
-        }
-    }
+            })
 
-    async componentDidMount() {
-        Analytics.doSendHomePageView()
+            Analytics.doSendSortingPageView()
+        }
     }
 
     goNextStep = async (answers) => {
@@ -77,17 +73,21 @@ class Sorting extends React.Component {
 
                     const tagsCount = answers.length
 
-                    GrifinoriaMetadata.score = grifinoriaScore / tagsCount
-                    SonserinaMetadata.score = sonserinaScore / tagsCount
-                    CorvinalMetadata.score = corvinalScore / tagsCount
-                    Lufalufa.score = lufalufaScore / tagsCount
+                    grifinoriaScore = grifinoriaScore / tagsCount
+                    sonserinaScore = sonserinaScore / tagsCount
+                    corvinalScore = corvinalScore / tagsCount
+                    lufalufaScore = lufalufaScore / tagsCount
+
+                    const houseToExclude = this.props.navigation.getParam('houseToExclude', undefined)
 
                     const betterHouse = [
-                        GrifinoriaMetadata,
-                        SonserinaMetadata,
-                        CorvinalMetadata,
-                        LufalufaMetadata
-                    ].sort((a, b) => b.score - a.score)[0]
+                        { house: Grifinoria, score: grifinoriaScore },
+                        { house: Sonserina, score: sonserinaScore },
+                        { house: Corvinal, score: corvinalScore },
+                        { house: Lufalufa, score: lufalufaScore },
+                    ]
+                        .filter(h => h.house != houseToExclude)
+                        .sort((a, b) => b.score - a.score)[0]
 
                     setTimeout(() => {
                         this.setState({
@@ -103,10 +103,13 @@ class Sorting extends React.Component {
                                 house: betterHouse,
                                 user,
                             }))
+
+                            Analytics.doSendSortingDoneEvent(HouseMetadata[betterHouse.house])
+
                             this.props.navigation.goBack()
 
                         })
-                    }, 1800)
+                    }, 2000)
 
                 })
 

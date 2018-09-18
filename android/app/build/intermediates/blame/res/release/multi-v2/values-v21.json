@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/felipe/Projects/personal/candidates/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/home/felipe/Projects/personal/shat/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/home/felipe/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/b1e4f00f8929baa903c72592e0232651/res/values-v21/values-v21.xml",

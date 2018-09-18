@@ -4,6 +4,7 @@ import { translate } from 'react-i18next';
 import { StyleSheet } from 'react-native';
 import { Box, Paper } from '../components';
 import { StepTypes } from '../constants/script';
+import { Ads } from '../services';
 import Analytics from '../services/Analytics';
 import { withTheme } from '../theme';
 import FadeFromDown from '../transitions/FadeFromDown';
@@ -32,22 +33,31 @@ class ScriptStep extends React.Component {
 
     async componentDidMount() {
         Analytics.doSendHomePageView()
+
+        const { onEnd, data } = this.props
+        if(data.type === StepTypes.Video && !(await Ads.canShowRewardedAds())) {
+            onEnd()
+        }
     }
 
+    doShowAds = async (callBack) => {
+        await Ads.doShowRewardedAds()
+        callBack()
+    }
 
     render() {
 
-        const { t, theme, styles, index, active, data, user, onEnd } = this.props
-        const { } = this.state
+        const { t, styles, active, data, onEnd } = this.props
 
         const { type, messages, question, last } = data
 
-        return (type === StepTypes.Message) ? (
+        return (type === StepTypes.Message || type === StepTypes.Video) ? (
+            console.log(messages) || 
             <FadeFromDown visible={active} duration={DEF_DELAY}>
                 <Paper padding>
 
                     {
-                        messages.map((m, i) => (
+                        data.messages.map((m, i) => (
                             <FadeFromDown
                                 key={i}
                                 visible
@@ -64,7 +74,9 @@ class ScriptStep extends React.Component {
 
                     <FadeFromDown visible delay={messages.length * DEF_DELAY_BETWEEN_MESSAGES + DEF_DELAY_INITIAL_MESSAGE}>
                         <Box centralize>
-                            <Buttom onPress={onEnd} flat children={last ? t('finish') : t('next')} />
+                            <Buttom onPress={
+                                () => type === StepTypes.Video ? this.doShowAds(onEnd) : onEnd()
+                            } flat children={last ? t('finish') : t('next')} />
                         </Box>
                     </FadeFromDown>
 

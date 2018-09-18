@@ -63,7 +63,7 @@ class RootNavigation extends React.Component {
 
                                 <Buttom
                                     flat
-                                    onPress={() => Auth.doToggleAuth(t)}>
+                                    onPress={async () => await Auth.doToggleAuth(t)}>
 
                                     {!!user ? t('sign-out') : t('sign-in')}
 

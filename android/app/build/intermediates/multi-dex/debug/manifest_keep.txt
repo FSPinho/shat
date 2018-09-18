@@ -1,0 +1,3 @@
+# Referenced at /home/felipe/Projects/personal/shat/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:55
+-keep class com.cytech.shat.MainApplication { <init>(...); }
+

@@ -70,6 +70,17 @@
 		CBB22220D23C4BBC81DDEF73 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0417B9FFEF48B39C1A69B6 /* SafariServices.framework */; };
 		0F72AFEA10304C6E8EDC0016 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69613DBD6513445FAD023848 /* AddressBook.framework */; };
 		37448E0937444276B2A497D4 /* libRNViewOverflow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2311A9C83B8E40D186C31C6A /* libRNViewOverflow.a */; };
+		0C39DC23A0E34F08BB2E86E1 /* libRCTOneSignal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F65CAD7146144A3FBB602DA9 /* libRCTOneSignal.a */; };
+		80B8CEFDC76F4591B4875859 /* JosefinSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE34D187827F461DA7B1E0FB /* JosefinSans-Bold.ttf */; };
+		E62C813351E743A8932FF763 /* JosefinSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EA5DA6375044BD480431855 /* JosefinSans-BoldItalic.ttf */; };
+		BD6C9E3684FB471D9CD4448F /* JosefinSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D4C4D23C55D4C20966CAD2D /* JosefinSans-Italic.ttf */; };
+		94BCF9EB6A2143C99530D7EA /* JosefinSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12DD2905C2DD430997179F66 /* JosefinSans-Light.ttf */; };
+		1F913B9F863948CDAE3A8586 /* JosefinSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7315E0C02219408EA8993367 /* JosefinSans-LightItalic.ttf */; };
+		84CEC773F64C45D79B253DFD /* JosefinSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 142C7BF953714DD4BBCB9202 /* JosefinSans-Regular.ttf */; };
+		4C21559E734147F3A9DB6D53 /* JosefinSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 366C53240BD741F0A3EE0E6C /* JosefinSans-SemiBold.ttf */; };
+		1ADF7C4D10D84CB781F77F71 /* JosefinSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76F44D729CDD47C6A69193D3 /* JosefinSans-SemiBoldItalic.ttf */; };
+		8FC01305F42644888BABF7AE /* JosefinSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7537B2A01DE4100AF8D2F98 /* JosefinSans-Thin.ttf */; };
+		CCD49ACDCCCB48378B59F462 /* JosefinSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEC8789941B44618150CBC1 /* JosefinSans-ThinItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -417,6 +428,18 @@
 		69613DBD6513445FAD023848 /* AddressBook.framework */ = {isa = PBXFileReference; name = "AddressBook.framework"; path = "System/Library/Frameworks/AddressBook.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		0F4166FCCB0E488B9B0537C7 /* RNViewOverflow.xcodeproj */ = {isa = PBXFileReference; name = "RNViewOverflow.xcodeproj"; path = "../node_modules/react-native-view-overflow/ios/RNViewOverflow.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		2311A9C83B8E40D186C31C6A /* libRNViewOverflow.a */ = {isa = PBXFileReference; name = "libRNViewOverflow.a"; path = "libRNViewOverflow.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		65EC217C71324A2C83798B39 /* RCTOneSignal.xcodeproj */ = {isa = PBXFileReference; name = "RCTOneSignal.xcodeproj"; path = "../node_modules/react-native-onesignal/ios/RCTOneSignal.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		F65CAD7146144A3FBB602DA9 /* libRCTOneSignal.a */ = {isa = PBXFileReference; name = "libRCTOneSignal.a"; path = "libRCTOneSignal.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		FE34D187827F461DA7B1E0FB /* JosefinSans-Bold.ttf */ = {isa = PBXFileReference; name = "JosefinSans-Bold.ttf"; path = "../assets/fonts/JosefinSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6EA5DA6375044BD480431855 /* JosefinSans-BoldItalic.ttf */ = {isa = PBXFileReference; name = "JosefinSans-BoldItalic.ttf"; path = "../assets/fonts/JosefinSans-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0D4C4D23C55D4C20966CAD2D /* JosefinSans-Italic.ttf */ = {isa = PBXFileReference; name = "JosefinSans-Italic.ttf"; path = "../assets/fonts/JosefinSans-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		12DD2905C2DD430997179F66 /* JosefinSans-Light.ttf */ = {isa = PBXFileReference; name = "JosefinSans-Light.ttf"; path = "../assets/fonts/JosefinSans-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7315E0C02219408EA8993367 /* JosefinSans-LightItalic.ttf */ = {isa = PBXFileReference; name = "JosefinSans-LightItalic.ttf"; path = "../assets/fonts/JosefinSans-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		142C7BF953714DD4BBCB9202 /* JosefinSans-Regular.ttf */ = {isa = PBXFileReference; name = "JosefinSans-Regular.ttf"; path = "../assets/fonts/JosefinSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		366C53240BD741F0A3EE0E6C /* JosefinSans-SemiBold.ttf */ = {isa = PBXFileReference; name = "JosefinSans-SemiBold.ttf"; path = "../assets/fonts/JosefinSans-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		76F44D729CDD47C6A69193D3 /* JosefinSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "JosefinSans-SemiBoldItalic.ttf"; path = "../assets/fonts/JosefinSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A7537B2A01DE4100AF8D2F98 /* JosefinSans-Thin.ttf */ = {isa = PBXFileReference; name = "JosefinSans-Thin.ttf"; path = "../assets/fonts/JosefinSans-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4BEC8789941B44618150CBC1 /* JosefinSans-ThinItalic.ttf */ = {isa = PBXFileReference; name = "JosefinSans-ThinItalic.ttf"; path = "../assets/fonts/JosefinSans-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -460,6 +483,7 @@
 				CBB22220D23C4BBC81DDEF73 /* SafariServices.framework in Frameworks */,
 				0F72AFEA10304C6E8EDC0016 /* AddressBook.framework in Frameworks */,
 				37448E0937444276B2A497D4 /* libRNViewOverflow.a in Frameworks */,
+				0C39DC23A0E34F08BB2E86E1 /* libRCTOneSignal.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +686,7 @@
 				A4DAEB1E076A4411A3D98B1F /* RNFirebase.xcodeproj */,
 				A45D3CABF3AA4F76AA278AC5 /* RNGoogleSignin.xcodeproj */,
 				0F4166FCCB0E488B9B0537C7 /* RNViewOverflow.xcodeproj */,
+				65EC217C71324A2C83798B39 /* RCTOneSignal.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -730,6 +755,16 @@
 				19CD929A91A64FA1872F9FD9 /* CatIcons.svg */,
 				6804C1B45DB1477BBF85B4A7 /* CatIcons.ttf */,
 				A2666C7209304AFE8B3CFDB8 /* CatIcons.woff */,
+				FE34D187827F461DA7B1E0FB /* JosefinSans-Bold.ttf */,
+				6EA5DA6375044BD480431855 /* JosefinSans-BoldItalic.ttf */,
+				0D4C4D23C55D4C20966CAD2D /* JosefinSans-Italic.ttf */,
+				12DD2905C2DD430997179F66 /* JosefinSans-Light.ttf */,
+				7315E0C02219408EA8993367 /* JosefinSans-LightItalic.ttf */,
+				142C7BF953714DD4BBCB9202 /* JosefinSans-Regular.ttf */,
+				366C53240BD741F0A3EE0E6C /* JosefinSans-SemiBold.ttf */,
+				76F44D729CDD47C6A69193D3 /* JosefinSans-SemiBoldItalic.ttf */,
+				A7537B2A01DE4100AF8D2F98 /* JosefinSans-Thin.ttf */,
+				4BEC8789941B44618150CBC1 /* JosefinSans-ThinItalic.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1198,6 +1233,16 @@
 				3E1B2944FC274C258F4AAC84 /* CatIcons.svg in Resources */,
 				740A0FCC498E49B49BA80978 /* CatIcons.ttf in Resources */,
 				F65822480B6A48858CE5FD94 /* CatIcons.woff in Resources */,
+				80B8CEFDC76F4591B4875859 /* JosefinSans-Bold.ttf in Resources */,
+				E62C813351E743A8932FF763 /* JosefinSans-BoldItalic.ttf in Resources */,
+				BD6C9E3684FB471D9CD4448F /* JosefinSans-Italic.ttf in Resources */,
+				94BCF9EB6A2143C99530D7EA /* JosefinSans-Light.ttf in Resources */,
+				1F913B9F863948CDAE3A8586 /* JosefinSans-LightItalic.ttf in Resources */,
+				84CEC773F64C45D79B253DFD /* JosefinSans-Regular.ttf in Resources */,
+				4C21559E734147F3A9DB6D53 /* JosefinSans-SemiBold.ttf in Resources */,
+				1ADF7C4D10D84CB781F77F71 /* JosefinSans-SemiBoldItalic.ttf in Resources */,
+				8FC01305F42644888BABF7AE /* JosefinSans-Thin.ttf in Resources */,
+				CCD49ACDCCCB48378B59F462 /* JosefinSans-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1333,6 +1378,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1345,6 +1391,7 @@
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
 					"$(SRCROOT)/../node_modules/react-native-view-overflow/ios",
+					"$(SRCROOT)/../node_modules/react-native-onesignal/ios/**",
 				);
 			};
 			name = Debug;
@@ -1367,6 +1414,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1379,6 +1427,7 @@
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
 					"$(SRCROOT)/../node_modules/react-native-view-overflow/ios",
+					"$(SRCROOT)/../node_modules/react-native-onesignal/ios/**",
 				);
 			};
 			name = Release;
@@ -1409,6 +1458,7 @@
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
 					"$(SRCROOT)/../node_modules/react-native-view-overflow/ios",
+					"$(SRCROOT)/../node_modules/react-native-onesignal/ios/**",
 				);
 			};
 			name = Debug;
@@ -1438,6 +1488,7 @@
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
 					"$(SRCROOT)/../node_modules/react-native-view-overflow/ios",
+					"$(SRCROOT)/../node_modules/react-native-onesignal/ios/**",
 				);
 			};
 			name = Release;
@@ -1469,6 +1520,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1481,6 +1533,7 @@
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
 					"$(SRCROOT)/../node_modules/react-native-view-overflow/ios",
+					"$(SRCROOT)/../node_modules/react-native-onesignal/ios/**",
 				);
 			};
 			name = Debug;
@@ -1512,6 +1565,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1524,6 +1578,7 @@
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
 					"$(SRCROOT)/../node_modules/react-native-view-overflow/ios",
+					"$(SRCROOT)/../node_modules/react-native-onesignal/ios/**",
 				);
 			};
 			name = Release;
@@ -1554,6 +1609,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1566,6 +1622,7 @@
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
 					"$(SRCROOT)/../node_modules/react-native-view-overflow/ios",
+					"$(SRCROOT)/../node_modules/react-native-onesignal/ios/**",
 				);
 			};
 			name = Debug;
@@ -1596,6 +1653,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1608,6 +1666,7 @@
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
 					"$(SRCROOT)/../node_modules/react-native-view-overflow/ios",
+					"$(SRCROOT)/../node_modules/react-native-onesignal/ios/**",
 				);
 			};
 			name = Release;

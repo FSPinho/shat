@@ -23,6 +23,22 @@
           }
         },
         {
+          "client_id": "154589217883-7i059etqt9blbiaofb1cinhgcjnn5vhn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cytech.shat",
+            "certificate_hash": "a8fc1cd075de4dbfc464dc50716274813e2c69fa"
+          }
+        },
+        {
+          "client_id": "154589217883-1gruqhbtuc7pdl132rb5tc5r3ct9osk5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cytech.shat",
+            "certificate_hash": "0e550f30e481781e30668b14891a73d606692faf"
+          }
+        },
+        {
           "client_id": "154589217883-779pf7vrolad99qjufnnbd42u5vnrv1m.apps.googleusercontent.com",
           "client_type": 3
         }
